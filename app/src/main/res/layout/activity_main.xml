@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:layout_marginBottom="20sp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Tic Tac Toe"
+        android:textAlignment="center"
+        android:textColor="#DC0436"
+        android:textSize="42sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:gravity="center_vertical"
+            android:text="Players  X's  turn"
+            android:textColor="#B3B2B2" />
+
+        <!--        <ImageView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:src="@drawable/ic_baseline_undo_24_undo"-->
+        <!--            android:layout_gravity="center"/>-->
+        <Button
+            android:id="@+id/b_undo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:backgroundTint="#000500"
+            android:drawableLeft="@drawable/ic_baseline_undo_24_undo"
+            android:fontFamily="monospace"
+            android:text="Undo"
+            android:textAlignment="textStart"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="440sp"
+        android:columnCount="3"
+        android:rowCount="3">
+
+
+        <Button
+            android:id="@+id/b7"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="5sp"
+            android:text=""
+            android:textSize="80sp" />
+
+        <Button
+            android:id="@+id/b8"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="5sp"
+            android:text=""
+            android:textSize="80sp" />
+
+        <Button
+            android:id="@+id/b9"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="5sp"
+            android:text=""
+            android:textSize="80sp" />
+
+        <Button
+            android:id="@+id/b4"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="5sp"
+            android:text=""
+            android:textSize="80sp" />
+
+        <Button
+            android:id="@+id/b5"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="5sp"
+            android:text=""
+            android:textSize="80sp" />
+
+        <Button
+            android:id="@+id/b6"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="5sp"
+            android:text=""
+            android:textSize="80sp" />
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="5sp"
+            android:text=""
+            android:textSize="80sp" />
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="5sp"
+            android:text=""
+            android:textSize="80sp" />
+
+        <Button
+            android:id="@+id/b3"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="5sp"
+            android:text=""
+            android:textSize="80sp" />
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30sp"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/button"
+        android:text="RESET"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
